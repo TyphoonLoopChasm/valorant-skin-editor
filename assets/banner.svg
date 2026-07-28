@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1923"/>
+      <stop offset="55%" stop-color="#151F2A"/>
+      <stop offset="100%" stop-color="#1C2B36"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4655" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#FF4655" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF4655" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF4655" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="glowSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF4655" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF4655" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A4650"/>
+      <stop offset="50%" stop-color="#8B98A3"/>
+      <stop offset="100%" stop-color="#3A4650"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- angular tactical panels -->
+  <polygon points="780,0 1200,0 1200,360 620,360" fill="#0B1218" opacity="0.55"/>
+  <polygon points="880,0 1200,0 1200,360 760,360" fill="#141C24" opacity="0.5"/>
+
+  <!-- glow spot behind weapon area -->
+  <ellipse cx="950" cy="180" rx="260" ry="200" fill="url(#glowSpot)"/>
+
+  <!-- crosshair motif -->
+  <g stroke="#FF4655" stroke-width="2.5" opacity="0.75">
+    <line x1="960" y1="70" x2="960" y2="120"/>
+    <line x1="960" y1="240" x2="960" y2="290"/>
+    <line x1="850" y1="180" x2="900" y2="180"/>
+    <line x1="1020" y1="180" x2="1070" y2="180"/>
+  </g>
+  <circle cx="960" cy="180" r="46" fill="none" stroke="#FF4655" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="960" cy="180" r="4" fill="#FF4655"/>
+
+  <!-- stylized weapon silhouette (abstract skin outline) -->
+  <g transform="translate(760,150) rotate(-6)">
+    <path d="M0,40 L220,40 L235,25 L300,25 L300,45 L235,55 L220,55 L0,60 Z" fill="url(#steel)" stroke="#0F1923" stroke-width="2"/>
+    <rect x="40" y="60" width="18" height="45" fill="#3A4650" stroke="#0F1923" stroke-width="2"/>
+    <rect x="260" y="10" width="12" height="20" fill="#3A4650" stroke="#0F1923" stroke-width="1.5"/>
+    <path d="M0,40 L0,60 L-35,55 L-35,45 Z" fill="#2A333B" stroke="#0F1923" stroke-width="2"/>
+    <path d="M60,40 L200,40 L200,55 L60,55 Z" fill="#FF4655" opacity="0.75"/>
+    <path d="M65,42 L195,42 L195,45 L65,45 Z" fill="#FFFFFF" opacity="0.35"/>
+  </g>
+
+  <!-- fine grid pattern lower right -->
+  <g stroke="#FF4655" stroke-width="0.6" opacity="0.18">
+    <line x1="820" y1="280" x2="1180" y2="280"/>
+    <line x1="820" y1="300" x2="1180" y2="300"/>
+    <line x1="820" y1="320" x2="1180" y2="320"/>
+    <line x1="860" y1="260" x2="860" y2="340"/>
+    <line x1="920" y1="260" x2="920" y2="340"/>
+    <line x1="980" y1="260" x2="980" y2="340"/>
+    <line x1="1040" y1="260" x2="1040" y2="340"/>
+    <line x1="1100" y1="260" x2="1100" y2="340"/>
+  </g>
+
+  <!-- left accent edge -->
+  <rect x="60" y="60" width="6" height="220" fill="url(#edge)"/>
+
+  <!-- diagonal speed accents -->
+  <polygon points="0,340 260,340 220,360 0,360" fill="#FF4655" opacity="0.25"/>
+  <polygon points="0,320 200,320 175,340 0,340" fill="#FF4655" opacity="0.15"/>
+
+  <!-- headline -->
+  <text x="86" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="#ECECEC" letter-spacing="1">
+    <tspan x="86" y="150" textLength="700" lengthAdjust="spacingAndGlyphs">VALORANT</tspan>
+  </text>
+  <text x="86" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="#FF4655" letter-spacing="1">
+    <tspan x="86" y="228" textLength="620" lengthAdjust="spacingAndGlyphs">SKINCHANGER</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="88" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="21" fill="#B9C2C9">
+    <tspan x="88" y="272" textLength="900" lengthAdjust="spacingAndGlyphs">Reads loadout files, processes skin IDs, exports custom weapon visuals</tspan>
+  </text>
+  <text x="88" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="21" fill="#FF4655">
+    <tspan x="88" y="300" textLength="180" lengthAdjust="spacingAndGlyphs">— no setup</tspan>
+  </text>
+</svg>
